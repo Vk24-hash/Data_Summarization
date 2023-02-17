@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import requests
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ def Index():
      than the Chrysler Building by 5.2 metres (17 ft). Excluding transmitters, the Eiffel Tower is the second tallest free-standing structure in France after the Millau Viaduct."
     '''
 
-    minL = 70
+    minL = 20
     maxL = 70
 
     def query(payload):
@@ -28,7 +28,7 @@ def Index():
         "parameters": {"min_length": minL, "max_length": maxL},
 
     })
-    return render_template("index.html", result=output)
+    return render_template("index.html", result=output, mini=minL)
 
 
 if __name__ == '__main__':
