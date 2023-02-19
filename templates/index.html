@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-<form>
-    <form action = "{{url_for('Summarize')}}" method="post">
+<form action = "{{url_for('Summarize')}}" method="post">
         <textarea name="data" cols="30" rows="10" placeholder="Enter your Data" required="required"></textarea>
+        <input type="range" min="20" max="1000" name="maxL" value="100">
+        <button type="reset">clear</button>
         <button type="submit">Submit</button>
 </form>
-
     <h3>Summarized Text:</h3>
     <textarea rows="10" cols="30" name="result">{{result}}</textarea>
 </body>
