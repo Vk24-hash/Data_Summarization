@@ -1,17 +1,9 @@
-## First NLP program
+## Data Summarization using NLP
 
-### NLP involves following python libraries:
+### Python libraries involved
    NLTK\
-   gensim\
-   flashtext\
    Hugging face
    
-### NLP applications:
-    Autocorrect
-    Voice Assistant
-    Sentiment Analysis
-    Text Extraction
-    Text Summarization
-    Speech Recognition
+
   
    
